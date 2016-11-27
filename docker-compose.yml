@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo
+    ports:
+    - "27017:27017"
+  users:
+    build: ../sprint-users/app/.
+    ports:
+      - 8081:3000
+    depends_on:
+      - mongodb
