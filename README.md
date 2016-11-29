@@ -5,7 +5,7 @@ In particular the event is a sprint event with heats, e.g. quarter-, semi-finals
 Pattern:
 https://blog.rendle.io/doing-one-thing-with-microservices/
 
-Services include:
+# Services include:
 ## Users
 Provides a user database, and means for authorizing and validating a jwt token
 https://github.com/it-lynski/sprint-users
@@ -26,3 +26,12 @@ Provides a list of races as well as information about every race, including
 * Athletes
 * Results
 https://github.com/it-lynski/sprint-races
+
+# Clients
+In planning:
+* web admin client
+* web athlete client (responsive)
+
+# Documentation
+Check the following for adding apidoc to projects:
+https://github.com/vkomulai/express-apidoc-demo

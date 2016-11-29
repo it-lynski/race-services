@@ -5,13 +5,13 @@ services:
     ports:
     - "27017:27017"
   users:
-    build: ../sprint-users/app/.
+    build: ../race-users/.
     ports:
       - 8081:3000
     depends_on:
       - mongodb
   race-config:
-    build: ../sprint-race-config/app/.
+    build: ../race-config/.
     ports:
       - 8081:3000
     depends_on:
