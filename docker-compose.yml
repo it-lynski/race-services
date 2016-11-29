@@ -10,3 +10,10 @@ services:
       - 8081:3000
     depends_on:
       - mongodb
+  race-config:
+    build: ../sprint-race-config/app/.
+    ports:
+      - 8081:3000
+    depends_on:
+      - mongodb
+      - users
